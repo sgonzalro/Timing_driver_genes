@@ -27,3 +27,10 @@ save(list(odds_top50 = odds_top50, odds_tp53 = odds_tp53), file = "aux_final_res
 
 ## Output description
 
+- odds_top50: List containing 3 objetcs:
+  - data: results from the analysis, including odds ratio, error range, etc.
+  - plot: 3 sections plot describing the results (see publication's figure 3)
+  - count_genes: objetct needed to run the tp53 analysis
+- odds_tp53: List cointaining 2 objetcs:
+  - data: similar to odds_top50 object cointaing the odds numerbs.
+  - plot: TP53 plot accross the different tumour types
