@@ -6,7 +6,9 @@ Timing analysis of most recurrent driver genes as a contribution to PCAWG-11
 
 The script needs 4 files to be run:
 
-- TableS2_driver_point_mutations: File not privided but can be obtained from PCAWG
+- TableS2_driver_point_mutations: File not privided but can be obtained from [PCAWG Drivers' table](https://www.synapse.org/#!Synapse:syn11639580)
+- Purity and ploidy: file containing purity and ploidy of each sample
+- Patients tissue file info: R object file containing minor patient information.
 
 ## Analysis workflow
 ```
