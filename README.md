@@ -23,10 +23,15 @@ load("2017_02_Patients_tissue_colors.Rdata", verbose = TRUE) #sample2donor, spec
 odds_top50 <- timing_drivers(finalGenotypes, purity_ploidy, tissueColors, sample2donor, specimenData, 50)
 odds_top50$plot
 ```
-[img]https://github.com/sgonzalro/Timing_driver_genes/blob/master/data/odds_top50.png[/img]
+![Odds driver genes](https://github.com/sgonzalro/Timing_driver_genes/blob/master/data/odds_top50.png)
 
 ```
 odds_tp53 <- timing_tp53(finalGenotypes, purity_ploidy, tissueColors, sample2donor, specimenData, odds_top50[["count_genes"]])
+odds_tp53$plot
+```
+![Odds TP53](https://github.com/sgonzalro/Timing_driver_genes/blob/master/data/odds_tp53.png)
+
+```
 save(list(odds_top50 = odds_top50, odds_tp53 = odds_tp53), file = "final_results.RData")
 ```
 
